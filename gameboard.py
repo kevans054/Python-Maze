@@ -6,7 +6,7 @@ class GameBoard:
             [" * ", " * ",  " * ", " * ", " * ", "   ", " * ", " * ", " * ", " * "],
             [#row1
                 " * ",
-                "   ",
+                " $ ",
                 "   ",
                 "   ",
                 "   ",
@@ -37,15 +37,15 @@ class GameBoard:
                 "   ",
                 "   ",
                 "   ",
-                "   ",
+                " $ ",
                 " * ",
             ],
              [#row4
                 " * ",
+                " $ ",
                 "   ",
-                "   ",
-                "   ",
-                "   ",
+                " * ",
+                " * ",
                 " * ",
                 " * ",
                 " * ",
@@ -55,7 +55,7 @@ class GameBoard:
              [#row5
                 " * ",
                 "   ",
-                "   ",
+                " $ ",
                 "   ",
                 "   ",
                 "   ",
@@ -66,14 +66,14 @@ class GameBoard:
             ],
              [#row6
                 " * ",
+                " * ",
+                " * ",
+                " * ",
+                " * ",
+                " * ",
                 "   ",
                 "   ",
-                "   ",
-                "   ",
-                "   ",
-                "   ",
-                "   ",
-                "   ",
+                " e ",
                 " * ",
             ],
             [#row7
@@ -91,20 +91,20 @@ class GameBoard:
             [#row8
                 " * ",
                 "   ",
+                " e ",
                 "   ",
                 "   ",
-                "   ",
-                "   ",
-                "   ",
-                "   ",
-                "   ",
+                " * ",
+                " * ",
+                " * ",
+                " * ",
                 " * ",
             ],
             [#row9
                 " * ",
-                "   ",
-                "   ",
-                "   ",
+                " * ",
+                " * ",
+                " * ",
                 "   ",
                 "   ",
                 "   ",
@@ -114,7 +114,7 @@ class GameBoard:
             ],
             [#row10
                 " * ",
-                "   ",
+                " $ ",
                 "   ",
                 "   ",
                 "   ",
@@ -146,6 +146,6 @@ class GameBoard:
     # Return True if the player is in the winning column and row
     # Return False otherwise
     def checkWin(self, playerRow, playerColumn):
-        if playerRow == 0 and playerColumn == 5:
+        if playerRow == 0 and playerColumn == 6:
             return True
         return False

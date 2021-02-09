@@ -7,6 +7,8 @@ print("To move up: w")
 print("To move down: s")
 print("To move left: a")
 print("To move right: d")
+print("Collect coins to earn points: $")
+print("avoid enemies: e")
 
 print("Try to get to the end! Good Luck!")
 print("---------------------------------")
@@ -16,7 +18,7 @@ print("---------------------------------")
 board = gameboard.GameBoard()
 
 # Create a new Player called player starting at position 3,2
-player = player.Player(3, 2)
+player = player.Player(10, 8)
 
 while True:
     board.printBoard(player.rowPosition, player.columnPosition)
